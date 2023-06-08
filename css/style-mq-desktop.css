@@ -109,6 +109,53 @@
     flex-wrap: wrap;
   }
   
+  .trends-title {
+    font-family: OpenSansBold;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 63.25px;
+  }
+
+  .trends-title::after {
+    display: block;
+    position: relative;
+    content: " ";
+    margin-top: 12px;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--color-gold);;
+    background-size: 100% 3px;
+    width: 66px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trends-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .trend {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+  }
+
+  .trend::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: content-box;
+    z-index: 0;
+  }
+
   .articles-container {
     max-width: 778px;
     display: inline-block;
