@@ -114,7 +114,7 @@
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
-    margin-top: 63.25px;
+    margin-top: 64px;
   }
 
   .trends-title::after {
@@ -577,6 +577,36 @@
     overflow: hidden;
   } 
   
+  .goods-title {
+    font-family: OpenSansBold;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .goods-title::after {
+    display: block;
+    position: relative;
+    content: " ";
+    margin-top: 12px;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--color-gold);;
+    background-size: 100% 3px;
+    width: 66px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .goods-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+    justify-content: space-around;
+    margin-bottom: 64px;
+  }
+
   .footer-container {
     position: relative;
     margin-top: 4px;
