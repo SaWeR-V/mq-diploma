@@ -626,11 +626,79 @@
     position: relative;
     border: 3px solid var(--color-gold);
     top: -10%;
-    width: 110%;
+    width: 124%;
     height: 50%;
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
     box-sizing: border-box;
     align-self: center;
+  }
+
+  .name-of-good {
+    text-transform: uppercase;
+    font-family: OpenSansBold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .about-good {
+    font-family: OpenSans;
+    display: block;
+    max-width: 265px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  .marker {
+    color: var(--color-gold);
+    text-decoration: none;
+  }
+
+  .marker:hover {
+    text-decoration: underline;
+  }
+
+  .prices-n-mag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .old-price {
+    font-family: OpenSansBold;
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+
+  .price {
+    font-family: OpenSansBold;
+    font-size: 20px;
+  }
+
+  .mag {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: OpenSansBold;
+    font-size: 14px;
+    width: 140px;
+    height: 47px;
+  }
+
+  .mag:hover {
+    background-color: #323232;
   }
 
   .footer-container {
