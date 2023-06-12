@@ -186,11 +186,16 @@
     display: inline-block;
   }
 
-  .trend-header-link {
+  .trend-header {
     text-decoration: none;
     display: flex;
-    max-width: 80%;
+    max-width: 75%;
     color: var(--color-white);
+  }
+
+  .trend-header:hover {
+    color: var(--color-gold);
+
   }
 
   .articles-container {
@@ -603,8 +608,29 @@
     margin: 0 auto;
     width: 1200px;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 64px;
+  }
+
+  .stuff-wrp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .good-image {
+    display: block;
+  }
+
+  .good-specs {
+    position: relative;
+    border: 3px solid var(--color-gold);
+    top: -10%;
+    width: 110%;
+    height: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+    align-self: center;
   }
 
   .footer-container {
