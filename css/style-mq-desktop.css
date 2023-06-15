@@ -862,7 +862,6 @@
 
   .radio {
     -webkit-appearance: none;
-    
   }
 
   .radio::before {
@@ -874,7 +873,6 @@
     background: url(../svg/form-empty-circle.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
 }
 
   .radio:checked {
@@ -984,6 +982,10 @@
     .footer-container {
       width: 768px;
     }  
+
+    .popup {
+      scale: 0.9;
+    }
   }
 
   @media (max-width: 360px) {
@@ -1035,5 +1037,9 @@
       top: 30%;
       left: 25%;
       z-index: 1;
+    }
+
+    .popup {
+      scale: 0.8;
     }
   }
