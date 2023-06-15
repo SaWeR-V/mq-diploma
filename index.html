@@ -9,8 +9,8 @@
 </head>
 <body>
    <div class="popup-container" id="pop-cont">
-      <div class="popup-close" id="x"></div>
          <div class="popup">
+            <div class="popup-close" id="x"></div>
             <div class="popup-wrapper">
             <h3 class="popup-title">Ваш фидбэк</h3>
                <div class="question-visit">Как часто Вы заходите на сайт?</div>
@@ -21,10 +21,17 @@
                   <option>Крайне редко</option>
                </select>
                <div class="question-subscribe">Вы подписаны на e-mail рассылку?</div>
-               <label class="options">
-                  <input type="radio" class="radio">Да
-                  <input type="radio" class="radio">Нет
-               </label>
+                  <form class="options">
+                     
+                     <input type="radio" class="radio" id="yes" name="q">
+                     <label class="options" for="yes">Да</label>
+                     <input type="radio" class="radio" id="no" name="q">
+                     <label class="options" for="no">Нет</label>
+                     </form>
+               
+               <div class="question-tell-us">Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</div>
+                  <input type="text" class="text-area" placeholder="Может, больше рецептов?">
+                  <button type="submit" class="send">Отправить</button>
             </div>
          </div>
    </div>
