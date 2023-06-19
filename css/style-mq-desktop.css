@@ -836,20 +836,14 @@
     align-self: center;
     border: none;
     background-color: #f4f7f6;
+    background-image: url(../svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 5%;
     margin-bottom: 15px;
     -webkit-appearance: none;
     padding-left: 15px;
     color: #a2a4a3;
-  }
-
-  .select::after {
-    content: "";
-    position: relative;
-    display: block;
-    background: url(../svg/form-arrows.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
   }
 
   .options {
