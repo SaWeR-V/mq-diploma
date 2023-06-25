@@ -788,6 +788,7 @@
     background: url(../svg/form-x.svg);
     display: block;
     position: absolute;
+    border: none;
     top: -5%;
     right: 0%;
     width: 25px;
