@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top: 28px;
   }
 
   .header::after {
@@ -39,7 +40,6 @@
   }
   
   .container {
-    padding-top: 28px;
     width: 1200px;
     max-width: 90%;
     display: flex;
@@ -78,7 +78,7 @@
   }
 
   .header-logo {
-    height: 41px;
+    width: 180px;
   }
 
   .intro {
