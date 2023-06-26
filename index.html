@@ -10,11 +10,12 @@
 <body>
    <div class="popup-container" id="pop-cont">
          <div class="popup">
+            <h3 class="popup-title">Ваш фидбэк</h3>
             <div class="popup-wrapper">
                <button class="popup-close" id="x">
                   <span class="visually-hidden">Закрыть попап</span>
                </button>
-            <h3 class="popup-title">Ваш фидбэк</h3>
+            <form>
                <div class="question-visit">Как часто Вы заходите на сайт?</div>
                <select class="select">
                   <svg width="174" height="296" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z" fill="#B59F5B"/></svg>
@@ -23,17 +24,18 @@
                   <option>Крайне редко</option>
                </select>
                <div class="question-subscribe">Вы подписаны на e-mail рассылку?</div>
-                  <form class="options">
-                     
+                  <div class="options">
                      <input type="radio" class="radio" id="yes" name="q">
                      <label class="options" for="yes">Да</label>
                      <input type="radio" class="radio" id="no" name="q">
                      <label class="options" for="no">Нет</label>
-                     </form>
+                  </div>
+                     
                
                <div class="question-tell-us">Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</div>
                   <textarea class="text-area" placeholder="Может, больше рецептов?"></textarea>
                   <button type="submit" class="send">Отправить</button>
+               </form>
             </div>
          </div>
    </div>
@@ -48,17 +50,17 @@
                <li><a class="link" href="#0">Темы</a></li>
                <li><a class="link" href="#0">Контакты</a></li>
              </ul>
-             <div class="burger-menu"></div>
+             <button class="burger-menu"></button>
        </div>  
        
-       <main class="intro">
+       <div class="intro">
              <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
-       </main>
+       </div>
        </header>
    <h4 class="trends-title">Сейчас в тренде</h4>
    <aside class="trends-wrapper">
       <div class="trend">
-         <img src="./images/trend1.jpg" class="trend-img">
+         <div class="trend-img-1">
          <div class="trend-text-box">
             <div class="trend-link-wrapper">
                <a class="article-link" href="#0">Lifestyle</a>
@@ -67,14 +69,14 @@
                <a href="#0" class="trend-header">Сейчас в тренде: сад на подоконнике</a></div>
          </div>
       <div class="trend">
-         <img src="./images/trend2.jpg" class="trend-img">
+         <div class="trend-img-2">
          <div class="trend-text-box">
             <a class="article-link" href="#0">Food</a>
             <a href="#0" class="trend-header">сыры на красивых  картинках из интернета: какие они на вкус?</a>
          </div>
       </div>
       <div class="trend">
-         <img src="./images/trend3.jpg" class="trend-img">
+         <div class="trend-img-3">
          <div class="trend-text-box">
             <div class="trend-link-wrapper">
             <a class="article-link" href="#0">Lifestyle</a>
@@ -84,7 +86,7 @@
          </div>
       </div>
       <div class="trend">
-         <img src="./images/trend4.jpg" class="trend-img">
+         <div class="trend-img-4">
          <div class="trend-text-box">
             <div class="trend-link-wrapper">
             <a class="article-link" href="#0">Food</a>
@@ -327,7 +329,7 @@
       </div>
        <div class="footer-container">
        <footer>
-         <ul>
+         <ul class="footer-links">
             <li class="li-footer"><a href="#0" class="dribble-image"></a></li>
             <span class="visually-hidden">Дрибл</span>
             <li class="li-footer"><a href="#0" class="pinterest-image"></a></li>
