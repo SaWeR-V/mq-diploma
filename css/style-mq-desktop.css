@@ -24,7 +24,7 @@
     background-size: cover;
     position: relative;
     padding-top: 28px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
   }
 
   .header::after {
@@ -103,6 +103,7 @@
     color: var(--color-white);;
     z-index: 1;
     text-transform: uppercase;
+    padding-top: 60px;
   }
   
   .wrapper {
@@ -139,47 +140,43 @@
 
   .trends-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .trend {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    box-sizing: content-box;
-    overflow: hidden;
-
+    height: 300px;
+    gap: 10px;
   }
 
   .trend-img-1 {
     background-image: url(../images/trend1.jpg);
-    background-size: 100%;
+    background-size: cover;
     display: block;
     position: relative;
-    width: 250px;
-    height: 100px;
+    width: 25%;
   }
 
   .trend-img-2 {
     background-image: url(../images/trend2.jpg);
+    background-size: cover;
     display: block;
     position: relative;
+    width: 25%;
   }
 
   .trend-img-3 {
     background-image: url(../images/trend3.jpg);
+    background-size: cover;
     display: block;
     position: relative;
+    width: 25%;
   }
 
   .trend-img-4 {
     background-image: url(../images/trend4.jpg);
+    background-size: cover;
     display: block;
     position: relative;
+    width: 25%;
   }
 
-  .trend::after {
+  .trend-img-1::after, .trend-img-2::after, .trend-img-3::after, .trend-img-4::after {
     content: "";
     position: absolute;
     max-width: 100%;
@@ -194,13 +191,10 @@
 
   .trend-text-box {
     position: absolute;
-    bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    right: 5%;
+    bottom: 10%;
+    display: block;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 25px;
     border: 2px solid var(--color-gold);
     box-sizing: border-box;
@@ -988,10 +982,11 @@
 
     .trends-wrapper {
       flex-wrap: wrap;
+      height: 450px;
     }
 
-    .trend {
-      width: 50%;
+    .trend-img-1, .trend-img-2, .trend-img-3, .trend-img-4 {
+      width: calc(50% - 5px);
     }
 
     .wrapper {
