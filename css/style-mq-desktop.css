@@ -629,7 +629,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
   }
 
@@ -649,7 +649,7 @@
     position: relative;
     border: 3px solid var(--color-gold);
     top: -10%;
-    width: 75%;
+    width: 365px;
     padding-top: 50px;
     padding-left: 20px;
     box-sizing: border-box;
