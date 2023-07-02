@@ -305,7 +305,7 @@
   .annotation {
     font-family: OpenSans;
     font-size: 15px;
-    width: 367px;
+    width: 365px;
     line-height: 22px;
     padding-bottom: 16px;
     display: block;
@@ -627,9 +627,9 @@
 
   .goods-wrapper {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -637,6 +637,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-basis: 33%;
+    align-items: center;
   }
 
   .good-image {
@@ -647,8 +649,7 @@
     position: relative;
     border: 3px solid var(--color-gold);
     top: -10%;
-    width: 124%;
-    height: 50%;
+    width: 95%;
     padding-top: 50px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -732,7 +733,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 73.75px;
-    width: 1200px;
+    width: 80%;
     height: 83.19px;
     background-color: #f4f7f6;
   }
@@ -940,7 +941,11 @@
     .menu {
       display: none;
     }
-
+    
+    .trend-header {
+      font-size: 14px;
+    }
+    
     .burger-menu {
       content: "";
       position: relative;
@@ -993,17 +998,31 @@
       flex-wrap: nowrap;
     }
     
-    .goods-wrapper {
-      flex-wrap: wrap;
-      max-width: 75%;
+    .stuff-wrp{
+      flex-basis: 50%;
     }
 
-    .footer-container {
-      width: 768px;
-    }  
+    .goods-wrapper {
+      flex-wrap: wrap;
+      max-width: 85%;
+    }
+
+    .good-specs {
+      width: 95%;
+    }
 
     .popup {
       scale: 0.9;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .trend-header {
+      font-size: 10px;
     }
   }
 
