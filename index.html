@@ -43,12 +43,12 @@
         <div class="container">
            <a href="#0"><img src="./svg/noemi-logo.svg" class="header-logo"></a> 
             <ul class="menu">
-               <li><a class="link" href="#0">Главная</a></li>
-               <li><a class="link" href="#0">Посты</a></li>
-               <li><a class="link" href="#0">Статьи</a></li>
-               <li><a class="link" href="#0">Теги</a></li>
-               <li><a class="link" href="#0">Темы</a></li>
-               <li><a class="link" href="#0">Контакты</a></li>
+               <li class="li-menu"><a class="link" href="#0">Главная</a></li>
+               <li class="li-menu"><a class="link" href="#0">Посты</a></li>
+               <li class="li-menu"><a class="link" href="#0">Статьи</a></li>
+               <li class="li-menu"><a class="link" href="#0">Теги</a></li>
+               <li class="li-menu"><a class="link" href="#0">Темы</a></li>
+               <li class="li-menu last-link"><a class="link" href="#0">Контакты</a></li>
              </ul>
              <button class="burger-menu">
                <span class="visually-hidden">Открыть меню сайта</span>
@@ -226,14 +226,13 @@
                </article>
        </section>
       <form action="">
-         <label>
-        <div class="search-container">
-          <input type="search" class="search-area" placeholder="Найти...">
-          <span class="visually-hidden">Введите поисковый запрос, например "Контакты"</span>
-          <button class="search"></button>
-         <span class="visually-hidden">Начать поиск</span>
-        </div>
-      </label>
+         <div class="search-container">
+            <label style="width: 100%;">
+               <input type="search" class="search-area" placeholder="Найти...">
+               <span class="visually-hidden">Введите поисковый запрос, например "Контакты"</span>
+            </label>
+            <button class="search"><span class="visually-hidden">Начать поиск</span></button>
+         </div>
       </form>
         <h4 class="section-subscribe">Рассылка</h4> 
       <form action="">
